@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Montserrat:wght@500;600;700&family=Shantell+Sans&family=Tilt+Warp&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Shantell Sans', cursive;
+font-family: 'Tilt Warp', cursive; */
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+nav ul li {
+    list-style: none;
+    margin: 15px;
+    font-size: 12px;
+    height: auto;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    transition: .3s;
+}
+a:hover{
+    color: #ff6464;
+}
+.menu{
+    display: none;
+}
+.info-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 130px 0;
+}
+.info-container .text-container{
+    width: 60%;
+    display: block;
+    justify-content: space-between;
+    margin-left: 200px; 
+}
+.info-container .text-container h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.info-container .text-container #caracteristics{
+    font-size: 20px;
+    font-weight: 700;
+}
+.info-container .text-container p{
+    font-size: 12px;
+    line-height: 20px;
+    line-break: auto;
+    width: 75%;
+}
+.info-container .text-container a{
+    padding: 13px;
+    border: none;
+    background: #ff6464;
+    border-radius: 2px;
+    width: 180px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    bottom: -30px;
+}
+.info-container .text-container a:hover{
+    background: rgb(225, 204, 204);
+    color: #ff6464;
+}
+.info-container .text-container a{
+    text-decoration: none;
+    color: white;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+    margin-top:-50px;
+    width: 400px;
+    height: 400px;
+}
+.image .border{
+    border-radius: 50%;
+    background-color: #edf7fa;
+}
+.image .border .img{
+    background-image: url('../../Public/images/WhatsApp\ Image\ 2023-03-24\ at\ 23.50.08.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    position: relative;
+    top: -15px;
+    right: -10px;
+    transition: 0.3s;
+}
+.image .border .img:hover{
+    top: -10px;
+    right: -5px;
+}
+@media screen and (max-width:1080px) {
+    .info-container {
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+    .info-container .text-container{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+    .info-container .image-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 200px;
+    }
+    .info-container .text-container p{
+        font-size: 12px;
+        line-height: 20px;
+        line-break: auto;
+        width: auto;
+    }
+    } 
+
+    @media screen and (max-width:750px) {
+       nav{
+        display: none;
+       }
+       .menu{
+        display: flex;
+        justify-content: flex-end;
+       }
+       .info-container {
+        margin-top: 0;
+      }
+        } 
+        @media screen and (max-width:480px) {
+            .info-container .text-container p{
+                font-size: 10px;
+                line-break: auto;
+                width: auto;
+            }
+
+            .info-container .text-container h1{
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .image .border .img{
+                width: 200px;
+                height: 200px;
+            }
+            .image-container{
+                margin-right: 200px;
+                margin-top:0;
+                width: 300px;
+                height: 300px;
+            }
+             } 
+
+             @media screen and (max-width:300px) {
+                 .info-container .text-container a{
+                    font-size: 10px;
+                 }
+                }
+    
