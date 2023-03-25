@@ -163,9 +163,11 @@ a:hover{
             }
 
             .info-container .text-container h1{
-                font-size: 30px;
+                font-size: 35px;
+            }
+            .info-container .text-container span{
+                font-size: 15px;
                 font-weight: 700;
-                margin-bottom: 10px;
             }
             .image .border .img{
                 width: 200px;
