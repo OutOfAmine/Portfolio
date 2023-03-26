@@ -11,8 +11,11 @@
     <title>Rim portofolio</title>
 </head>
 <body>
-    <nav>
-           <ul>
+    <div class="menu">
+        <img src="../../Public/images/Menu.svg" alt="" onclick="ShowNavMobile()" style="cursor: pointer;">
+    </div>
+    <nav class="nav">
+           <ul class="ul">
             <li>
                <a href="#">EXPERIENCES</a>
             </li>
@@ -33,13 +36,10 @@
              </li>
            </ul>
     </nav>
-    <div class="menu">
-        <img src="Public/images/Menu.svg" alt="">
-    </div>
     <div class="info-container">
         <div class="text-container">
             <h1>
-                Hi, I am Rim <br>
+                Hi,I am Rim <br>
                 <span id="caracteristics">
                 Travailleuse, proactive et curieuse
                 </span>
@@ -47,7 +47,7 @@
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
             </p>
-                <a href="Public/CV/RIM LAHRACHE-CV.pdf">
+                <a href="../../Public/CV/RIM LAHRACHE-CV.pdf">
                     Download Resume
                 </a>
         </div>
@@ -61,4 +61,19 @@
         </div>
     </div>
 </body>
+<script>
+            var a=true;
+    function ShowNavMobile() {
+        if (a) {
+        document.querySelector('.info-container').style.display='none';
+        document.querySelector('.nav').style.display='flex';
+            a=false
+        }
+        else{
+        document.querySelector('.info-container').style.display='flex';
+        document.querySelector('.nav').style.display='none';
+            a=true;
+        }
+    }
+</script>
 </html>

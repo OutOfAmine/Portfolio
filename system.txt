@@ -1,0 +1,1 @@
+color #EDF7FA;
