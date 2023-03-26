@@ -10,7 +10,7 @@ font-family: 'Tilt Warp', cursive; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+
 }
 
 nav{
@@ -50,8 +50,9 @@ a:hover{
 .info-container .text-container{
     width: 60%;
     display: block;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-left: 200px; 
+    height: 500px;
 }
 .info-container .text-container h1{
     font-size: 40px;
@@ -119,16 +120,22 @@ a:hover{
     right: -5px;
 }
 @media screen and (max-width:1080px) {
+        nav{
+            display: flex;
+        }
     .info-container {
         display:flex;
         flex-direction: column-reverse;
         align-items: center;
       }
     .info-container .text-container{
+        display: block;
         justify-content: center;
         align-items: center;
         text-align: center;
         margin-left: 0;
+        position: relative;
+        overflow: hidden;
     }
     .info-container .image-container{
         display: flex;
