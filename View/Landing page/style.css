@@ -10,6 +10,7 @@ font-family: 'Tilt Warp', cursive; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 nav{
@@ -199,4 +200,18 @@ a:hover{
                     font-size: 10px;
                  }
                 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ea3333;
+    border-radius: 30px;
+
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff646487;
+  }
     
