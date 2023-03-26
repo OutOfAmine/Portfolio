@@ -12,7 +12,6 @@ font-family: 'Tilt Warp', cursive; */
     box-sizing: border-box;
 
 }
-
 nav{
     display: flex;
     justify-content: flex-end;
@@ -119,10 +118,11 @@ a:hover{
     top: -10px;
     right: -5px;
 }
+.section{
+    height: 100vh;
+}
 @media screen and (max-width:1080px) {
-        nav{
-            display: flex;
-        }
+
     .info-container {
         display:flex;
         flex-direction: column-reverse;
@@ -161,8 +161,8 @@ a:hover{
         margin-top: 0;
     }
     .nav{
-        display: none;
         width: 100%;
+        display: none;
         height: 100vh;
         align-items: center;
         justify-content: center;
@@ -170,7 +170,6 @@ a:hover{
        .menu{
         display: flex;
         justify-content: flex-end;
-        z-index: 1000;
        }
        .info-container {
         margin-top: 0;
@@ -208,14 +207,14 @@ a:hover{
                  }
                 }
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
   ::-webkit-scrollbar-track {
     background: #ffffff;
   }
   ::-webkit-scrollbar-thumb {
     background: #ea3333;
-    border-radius: 30px;
+    border-radius: 20px;
 
   }
   ::-webkit-scrollbar-thumb:hover {

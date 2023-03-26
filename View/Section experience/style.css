@@ -10,9 +10,8 @@ html{
 }
 .wrapper{
   max-width: 100%;
-  margin: -70px auto;
   margin-bottom: 150px;
-  padding: 50px 60px;
+  padding: 50px 20px;
   position: relative;
   background-color: #ff6464;
 }
@@ -137,6 +136,34 @@ html{
     display: none;
   }
   .wrapper .row{
-    margin: 10px 0;
+    margin:30px 0;
+  }
+  .wrapper .row .details .title{
+    font-size: 15px;
+  }
+  .details span{
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .row p{
+    font-size: 10px;
+  }
+  .row .bottom i{
+    font-size: 13px;
+  }
+  .row .bottom a{
+    font-size: 12px;
+  }
+}
+@media(max-width: 260px){
+  .wrapper .row .details .title{
+    font-size: 10px;
+  }
+  .details span{
+    font-size: 9px;
+    margin-left: 5px;
+  }
+  .row .bottom i{
+    margin-left: 5px;
   }
 }
