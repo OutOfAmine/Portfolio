@@ -168,12 +168,12 @@ a:hover{
         align-items: center;
         justify-content: center;
         margin-right: 0;
-        margin-top: 0;
+        margin-top: -300px;
     }
     .nav{
         width: 100%;
         display: none;
-        height: 100vh;
+        height: 130vh;
         align-items: center;
         justify-content: center;
     }
@@ -246,6 +246,9 @@ a:hover{
                 }
                  .info-container .text-container{
                     height: 1000px;
+                }
+                .ul{
+                    margin-top: -500px;
                 }
                 }
                 @media screen and (max-width:280px) {
