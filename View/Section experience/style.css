@@ -10,7 +10,8 @@ html{
 }
 .wrapper{
   max-width: 100%;
-  margin-bottom: 150px;
+  margin-bottom: 300px;
+  
   padding: 50px 20px;
   position: relative;
   background-color: #ff6464;
@@ -21,11 +22,17 @@ html{
   width: 4px;
   background: #fff;
   left: 50%;
-  top: -40px;
+  top: 0;
   transform: translateX(-50%);
 }
 .wrapper .row{
   display: flex;
+}
+#experience{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 20px;
 }
 .wrapper .row-1{
   justify-content: flex-start;
@@ -128,6 +135,9 @@ html{
   .row-1 section .icon{
     left: -60px;
   }
+  #experience{
+    font-size: 13px;
+  }
 }
 @media(max-width: 440px){
   .wrapper .center-line,
@@ -154,6 +164,10 @@ html{
   .row .bottom a{
     font-size: 12px;
   }
+  #experience{
+    font-size: 10px;
+    margin-top: 150px;
+  }
 }
 @media(max-width: 260px){
   .wrapper .row .details .title{
@@ -165,5 +179,9 @@ html{
   }
   .row .bottom i{
     margin-left: 5px;
+  }
+  #experience{
+    font-size: 7px;
+    justify-content: flex-start;
   }
 }

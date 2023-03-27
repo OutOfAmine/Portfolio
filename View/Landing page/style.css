@@ -51,7 +51,7 @@ a:hover{
     display: block;
     justify-content: space-around;
     margin-left: 200px; 
-    height: 500px;
+
 }
 .info-container .text-container h1{
     font-size: 40px;
@@ -136,6 +136,7 @@ a:hover{
         margin-left: 0;
         position: relative;
         overflow: hidden;
+        height: 500px;
     }
     .info-container .image-container{
         display: flex;
@@ -148,6 +149,15 @@ a:hover{
         line-height: 20px;
         line-break: auto;
         width: auto;
+    }
+    #experience{
+        position: relative;
+        top: -250px;
+    }
+    .wrapper{
+        position: relative;
+        top: -250px;
+
     }
     } 
 
@@ -174,6 +184,15 @@ a:hover{
        .info-container {
         margin-top: 0;
       }
+      #experience{
+        position: relative;
+        top: -150px;
+    }
+    .wrapper{
+        position: relative;
+        top: -150px;
+
+    }
         } 
         @media screen and (max-width:480px) {
             .info-container .text-container p{
@@ -181,7 +200,9 @@ a:hover{
                 line-break: auto;
                 width: auto;
             }
-
+            .info-container .text-container{
+                height: 600px;
+            }
             .info-container .text-container h1{
                 font-size: 35px;
             }
@@ -199,13 +220,65 @@ a:hover{
                 width: 300px;
                 height: 300px;
             }
+            #experience{
+                position: relative;
+                top: -250px;
+            }
+            .wrapper{
+                position: relative;
+                top: -250px;
+        
+            }
              } 
 
-             @media screen and (max-width:300px) {
+             @media screen and (max-width:350px) {
                  .info-container .text-container a{
                     font-size: 10px;
                  }
+                 #experience{
+                    position: relative;
+                    top: -550px;
                 }
+                .wrapper{
+                    position: relative;
+                    top: -550px;
+            
+                }
+                 .info-container .text-container{
+                    height: 1000px;
+                }
+                }
+                @media screen and (max-width:280px) {
+                    #experience{
+                       position: relative;
+                       top: -450px;
+                   }
+                   .wrapper{
+                       position: relative;
+                       top: -450px;
+               
+                   }
+                    .info-container .text-container{
+                       height: 1000px;
+                   }
+                   }
+                   @media screen and (max-width:200px) {
+                    #experience{
+                       position: relative;
+                       top: 50px;
+                   }
+                   .wrapper{
+                       position: relative;
+                       top: 50px;
+               
+                   }
+                    .info-container .text-container{
+                       height: 1100px;
+                   }
+                   .info-container .text-container a{
+                    font-size: 5px;
+                 }
+                   }
 ::-webkit-scrollbar {
     width: 5px;
   }
