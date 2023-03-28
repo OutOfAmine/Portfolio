@@ -338,4 +338,8 @@ a:hover{
   ::-webkit-scrollbar-thumb:hover {
     background: #ff646487;
   }
-    
+  footer{
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 5px;
+  }  
