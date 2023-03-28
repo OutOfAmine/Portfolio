@@ -10,11 +10,10 @@ html{
 }
 .wrapper{
   max-width: 100%;
-  margin-bottom: 300px;
-  
   padding: 50px 20px;
   position: relative;
   background-color: #ff6464;
+  margin-bottom: 120px;
 }
 .wrapper .center-line{
   position: absolute;

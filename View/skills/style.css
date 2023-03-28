@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Montserrat:wght@500;600;700&family=Shantell+Sans&family=Tilt+Warp&display=swap');
+
+.skills-container{
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.cart-skills{
+    width: 300px;
+    height: 100px;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 45px;
+}
+.cart-skills img{
+    width: 70px;
+    height: auto;
+}
+.skill {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 35px;
+}
+.skill-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+@media screen and (max-width:800px) {
+    .cart-skills{
+    margin: 50px;
+    }
+}
+@media(max-width: 790px){
+    .skill-title{
+      font-size: 13px;
+    }
+  }
+  @media(max-width: 440px){
+    .skill-title{
+      font-size: 10px;
+    }
+  }
+  @media(max-width: 260px){
+
+    .skill-title{
+      font-size: 7px;
+    }
+  }
+  

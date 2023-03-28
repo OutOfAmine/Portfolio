@@ -157,7 +157,14 @@ a:hover{
     .wrapper{
         position: relative;
         top: -250px;
-
+    }
+    .skill-title{
+        position: relative;
+        top: -190px;
+    }
+    .skills-container{
+        position: relative;
+        top: -170px;
     }
     } 
 
@@ -190,8 +197,7 @@ a:hover{
     }
     .wrapper{
         position: relative;
-        top: -150px;
-
+        top: -150px;      
     }
         } 
         @media screen and (max-width:480px) {
@@ -227,7 +233,14 @@ a:hover{
             .wrapper{
                 position: relative;
                 top: -250px;
-        
+            }
+            .skill-title{
+                position: relative;
+                top: -180px;
+            }
+            .skills-container{
+                position: relative;
+                top: -170px;
             }
              } 
 
@@ -241,14 +254,28 @@ a:hover{
                 }
                 .wrapper{
                     position: relative;
-                    top: -550px;
-            
+                    top: -550px;          
+                }
+                .skill-title{
+                    position: relative;
+                    top: -480px;
+                    width: 100%;
+                }
+                .skills-container{
+                    position: relative;
+                    top: -470px;
                 }
                  .info-container .text-container{
                     height: 1000px;
                 }
                 .ul{
                     margin-top: -500px;
+                }
+                .cart-skills{
+                    width: 50px;
+                }
+                .skill{
+                    font-size: 20px;
                 }
                 }
                 @media screen and (max-width:280px) {
@@ -261,6 +288,14 @@ a:hover{
                        top: -450px;
                
                    }
+                   .skill-title{
+                    position: relative;
+                    top: -380px;
+                }
+                .skills-container{
+                    position: relative;
+                    top: -370px;
+                }
                     .info-container .text-container{
                        height: 1000px;
                    }
@@ -272,9 +307,16 @@ a:hover{
                    }
                    .wrapper{
                        position: relative;
-                       top: 50px;
-               
+                       top: 50px;              
                    }
+                   .skill-title{
+                    position: relative;
+                    top: 90px;
+                }
+                .skills-container{
+                    position: relative;
+                    top: 100px;
+                }
                     .info-container .text-container{
                        height: 1100px;
                    }

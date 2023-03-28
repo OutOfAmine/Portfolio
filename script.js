@@ -56,6 +56,10 @@ if (animateRight) {
     gsap.fromTo(experiences[i],{x:-300,opacity:0},{x:0,duration:0.8,opacity:1,scrollTrigger:{trigger:experiences[i],start:'top center'}})
 }
 }
+const cart_skills=document.querySelectorAll('.skills-container')
+for (let i = 0; i < cart_skills.length; i++) {
+    gsap.fromTo(cart_skills[i],{x:-300,opacity:0,y:-300},{x:0,y:0,duration:0.8,opacity:1,scrollTrigger:{trigger:cart_skills[i],start:'top center'}})
+}
 var v=true
 function ShowMore() {
   if (v) {
