@@ -228,19 +228,19 @@ a:hover{
             }
             #experience{
                 position: relative;
-                top: -250px;
+                top: -200px;
             }
             .wrapper{
                 position: relative;
-                top: -250px;
+                top: -200px;
             }
             .skill-title{
                 position: relative;
-                top: -180px;
+                top: -110px;
             }
             .skills-container{
                 position: relative;
-                top: -170px;
+                top: -100px;
             }
              } 
 
@@ -250,11 +250,12 @@ a:hover{
                  }
                  #experience{
                     position: relative;
-                    top: -550px;
+                    top: -500px;
+                    text-align: center;
                 }
                 .wrapper{
                     position: relative;
-                    top: -550px;          
+                    top: -500px;          
                 }
                 .skill-title{
                     position: relative;

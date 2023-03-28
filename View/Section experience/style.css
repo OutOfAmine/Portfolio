@@ -172,6 +172,9 @@ html{
   .wrapper .row .details .title{
     font-size: 10px;
   }
+  .text-container p{
+    font-size: 5px;
+  }
   .details span{
     font-size: 9px;
     margin-left: 5px;
@@ -181,6 +184,5 @@ html{
   }
   #experience{
     font-size: 7px;
-    justify-content: flex-start;
   }
 }
