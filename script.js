@@ -1,24 +1,4 @@
 
-
-// if (window.innerWidth>750) {
-//     document.querySelector('.info-container').style.display='flex';
-//     document.querySelector('.nav').style.display='flex';
-// }
-// function ShowNavMobile() {
-//             if (a) { 
-//                 document.querySelector('.info-container').style.display='none';
-//                 document.querySelector('.nav').style.display='flex';
-//                     a=false
-//         }
-//         else{
-//             document.querySelector('.info-container').style.display='flex';
-//             document.querySelector('.nav').style.display='none';
-//                 a=true;
-//     }
-
-// }
-var a=true;
-
 var nav = document.querySelector('.nav');
 var infoContainer = document.querySelector('.info-container');
 var a = false;
@@ -57,8 +37,12 @@ if (animateRight) {
 }
 }
 const cart_skills=document.querySelectorAll('.skills-container')
+const education=document.querySelectorAll('.education')
+for (let i = 0; i < education.length; i++) {
+    gsap.fromTo(education[i],{x:-300,opacity:0},{x:0,duration:0.8,opacity:1,scrollTrigger:{trigger:education[i],start:'top center'}})
+}
 for (let i = 0; i < cart_skills.length; i++) {
-    gsap.fromTo(cart_skills[i],{x:-300,opacity:0,y:-300},{x:0,y:0,duration:0.8,opacity:1,scrollTrigger:{trigger:cart_skills[i],start:'top center'}})
+  gsap.fromTo(cart_skills[i],{x:-300,opacity:0,y:-300},{x:0,y:0,duration:0.8,opacity:1,scrollTrigger:{trigger:cart_skills[i],start:'top center'}})
 }
 var v=true
 function ShowMore() {

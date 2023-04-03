@@ -1,0 +1,79 @@
+.line{
+    height: 2px;
+    width: auto;
+    background: #E0E0E0;
+    margin: 20px 250px;
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.education .education-details{
+    display: flex;
+    flex-direction: column;
+    margin: 0 250px;
+}
+.education-details .date{
+    color: #999797;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.education-details .local{
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.education-details .details{
+    font-size: 11px;
+    word-break: keep-all;
+    width: 80%;
+}
+
+@media screen and (max-width:900px) {
+    .education .education-details{
+        margin: 0 100px;
+    }
+    .line{
+    margin: 20px 100px;
+    }
+
+}
+@media screen and (max-width:1080px) {
+    .education-title{
+        margin-bottom: -120px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:500px) {
+    .education .education-details{
+     margin: 0 20px;
+    }
+    .line{
+    margin: 20px 20px;
+    width: auto;
+    }
+    .education-title{
+        margin-bottom: -50px;
+    }
+}
+@media screen and (max-width:350px) {
+    .education-title{
+        margin-bottom: -400px;
+    }
+}
+@media screen and (max-width:280px) {
+    .education-title{
+        margin-bottom: -200px;
+    }
+}
+@media screen and (max-width:275px) {
+    .education-title{
+        margin-bottom: -300px;
+    }
+}
+@media screen and (max-width:200px) {
+    .education-title{
+        margin-bottom: 200px;
+    }
+}
