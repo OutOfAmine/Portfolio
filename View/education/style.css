@@ -29,15 +29,13 @@
     word-break: keep-all;
     width: 80%;
 }
-
-@media screen and (max-width:900px) {
+@media screen and (max-width:920px) {
     .education .education-details{
         margin: 0 100px;
     }
     .line{
     margin: 20px 100px;
     }
-
 }
 @media screen and (max-width:1080px) {
     .education-title{
@@ -56,24 +54,31 @@
     .education-title{
         margin-bottom: -50px;
     }
+
 }
 @media screen and (max-width:350px) {
     .education-title{
         margin-bottom: -400px;
     }
+
 }
 @media screen and (max-width:280px) {
     .education-title{
         margin-bottom: -200px;
     }
+
 }
 @media screen and (max-width:275px) {
     .education-title{
         margin-bottom: -300px;
     }
+
 }
 @media screen and (max-width:200px) {
     .education-title{
-        margin-bottom: 200px;
+        margin-bottom: 300px;
+    }
+    .education-title{
+        margin-top: -300px;
     }
 }

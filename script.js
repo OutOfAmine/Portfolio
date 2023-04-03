@@ -38,11 +38,19 @@ if (animateRight) {
 }
 const cart_skills=document.querySelectorAll('.skills-container')
 const education=document.querySelectorAll('.education')
+const text_container=document.querySelectorAll('.text-container')
+const pourcentage=document.querySelectorAll('.pourcentage-skills')
 for (let i = 0; i < education.length; i++) {
     gsap.fromTo(education[i],{x:-300,opacity:0},{x:0,duration:0.8,opacity:1,scrollTrigger:{trigger:education[i],start:'top center'}})
 }
 for (let i = 0; i < cart_skills.length; i++) {
   gsap.fromTo(cart_skills[i],{x:-300,opacity:0,y:-300},{x:0,y:0,duration:0.8,opacity:1,scrollTrigger:{trigger:cart_skills[i],start:'top center'}})
+}
+for (let i = 0; i < text_container.length; i++) {
+  gsap.fromTo(text_container[i],{x:-300,opacity:0},{x:0,duration:0.8,opacity:1,scrollTrigger:{trigger:text_container[i],start:'top center'}})
+}
+for (let i = 0; i < pourcentage.length; i++) {
+  gsap.fromTo(pourcentage[i],{y:-300,opacity:0},{y:0,duration:0.8,opacity:1,scrollTrigger:{trigger:pourcentage[i],start:'top center'}})
 }
 var v=true
 function ShowMore() {
