@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amine - Full Stack Developer Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="portfolio-styles.css">
+</head>
+<body>
+  <!-- Matrix Background (Optional) -->
+  <canvas id="matrix-bg"></canvas>
+  
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">Amine<span class="cursor">_</span></div>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+        <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
+        <li><a href="#experience" onclick="closeMobileMenu()">Experience</a></li>
+        <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+        <li><button class="matrix-toggle-btn" onclick="toggleMatrix()">⚡ Matrix</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="glitch" data-text="Hi, I'm Amine">Hi, I'm Amine</h1>
+      <p class="hero-subtitle">Full Stack Developer & Problem Solver</p>
+      <p class="hero-description">Building modern web applications with clean code and great UX</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Hire Me</a>
+        <a href="#projects" class="btn btn-secondary">View Work</a>
+        <button onclick="openRecruiterMode()" class="btn btn-recruiter">👔 For Recruiters</button>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll Down</span>
+        <div class="arrow">↓</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="lead">Passionate developer with 5+ years of experience building scalable web applications.</p>
+          <p>I specialize in modern JavaScript frameworks, cloud architecture, and creating seamless user experiences. My goal is to write clean, maintainable code that solves real problems.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Years Exp</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Clients</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="profile-card">
+            <div class="profile-icon">👨‍💻</div>
+            <h3>Amine</h3>
+            <p>Full Stack Developer</p>
+            <div class="social-links">
+              <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+              <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+              <a href="mailto:your.email@example.com">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>JavaScript/TypeScript</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>React/Angular</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>HTML/CSS</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Node.js</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Python</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Databases</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Tools & Cloud</h3>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Git/GitHub</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Docker</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>AWS/Cloud</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">🌐</div>
+          </div>
+          <div class="project-content">
+            <h3>E-Commerce Platform</h3>
+            <p>Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include real-time inventory, payment integration, and admin dashboard.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Redux</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/project" target="_blank" class="project-link">GitHub</a>
+              <a href="https://demo.example.com" target="_blank" class="project-link">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">🤖</div>
+          </div>
+          <div class="project-content">
+            <h3>ML Data Pipeline</h3>
+            <p>Machine learning pipeline for predictive analytics using Python, TensorFlow, and Docker. Processes large datasets and provides real-time predictions.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">FastAPI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/ml-project" target="_blank" class="project-link">GitHub</a>
+              <a href="https://ml-demo.example.com" target="_blank" class="project-link">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">📱</div>
+          </div>
+          <div class="project-content">
+            <h3>Task Manager App</h3>
+            <p>Native Android application with offline-first architecture. Built with Kotlin, Room database, and Material Design principles.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Kotlin</span>
+              <span class="tech-tag">Room</span>
+              <span class="tech-tag">MVVM</span>
+              <span class="tech-tag">Material</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/task-app" target="_blank" class="project-link">GitHub</a>
+              <a href="https://play.google.com/store" target="_blank" class="project-link">Play Store</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022 - Present</span>
+            <h3>Senior Full Stack Developer</h3>
+            <h4>Tech Company Inc. - Remote</h4>
+            <p>Leading development of microservices architecture and mentoring junior developers.</p>
+            <ul>
+              <li>Reduced API response time by 40%</li>
+              <li>Implemented CI/CD pipeline</li>
+              <li>Led team of 5 developers</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2020 - 2022</span>
+            <h3>Full Stack Developer</h3>
+            <h4>Startup XYZ - City, Country</h4>
+            <p>Developed and maintained multiple web applications using modern frameworks.</p>
+            <ul>
+              <li>Built 3 production applications</li>
+              <li>Improved code coverage to 85%</li>
+              <li>Optimized database queries</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <h3>Send Me a Message</h3>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required placeholder=" ">
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required placeholder=" ">
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" required placeholder=" ">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            <div id="form-status"></div>
+          </form>
+        </div>
+
+        <!-- Contact Info & Map -->
+        <div class="contact-info-container">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="info-item">
+              <span class="info-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <p>your.email@example.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div>
+                <strong>Location</strong>
+                <p>Your City, Your Country</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🕐</span>
+              <div>
+                <strong>Timezone</strong>
+                <p>UTC+0</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="map-container">
+            <h3>Find Me Here</h3>
+            <div id="map" class="map">
+              <iframe 
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-74.1060%2C40.6128%2C-73.9060%2C40.8128&layer=mapnik&marker=40.7128%2C-74.0060"
+                width="100%" 
+                height="300" 
+                frameborder="0" 
+                style="border:0; border-radius: 8px;"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Amine. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        <a href="mailto:your.email@example.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Recruiter Modal -->
+  <div id="recruiter-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeRecruiterMode()">&times;</span>
+      <h2>👔 Recruiter Smart Match</h2>
+      <p>Paste a job description below to see how well I match the requirements:</p>
+      <textarea id="job-description" placeholder="Paste job description here..."></textarea>
+      <button onclick="analyzeMatch()" class="btn btn-primary">Analyze Match</button>
+      <div id="match-result"></div>
+    </div>
+  </div>
+
+  <script src="portfolio-script.js"></script>
+</body>
+</html>

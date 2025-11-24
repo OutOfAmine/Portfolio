@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amine Portfolio - Interactive Terminal</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="terminal-styles.css">
+</head>
+<body>
+  <!-- Matrix Background Canvas -->
+  <canvas id="matrix-bg"></canvas>
+  
+  <!-- Terminal Container -->
+  <div id="terminal-container">
+    <div id="terminal-header">
+      <span class="terminal-title">amine@portfolio:~$</span>
+      <div class="terminal-controls">
+        <button class="control-btn" id="matrix-toggle" title="Toggle Matrix">⚡</button>
+        <button class="control-btn" id="recruiter-mode" title="Recruiter Mode">👔</button>
+        <button class="control-btn minimize">_</button>
+        <button class="control-btn maximize">□</button>
+        <button class="control-btn close">×</button>
+      </div>
+    </div>
+    
+    <div id="terminal-body">
+      <div id="output"></div>
+      <div id="input-line">
+        <span class="prompt">visitor@amine:~$</span>
+        <input type="text" id="command-input" autocomplete="off" spellcheck="false">
+        <div id="autocomplete-suggestions"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Windows-Style CV Explorer Modal -->
+  <div id="cv-explorer" class="modal-window">
+    <div class="window-header">
+      <span class="window-title">📁 Amine - CV Explorer</span>
+      <div class="window-controls">
+        <button class="win-btn minimize">_</button>
+        <button class="win-btn maximize">□</button>
+        <button class="win-btn close" onclick="closeCVExplorer()">×</button>
+      </div>
+    </div>
+    <div class="window-body">
+      <div class="cv-sidebar">
+        <div class="cv-folder" onclick="openCVSection('experience')">
+          <span class="folder-icon">📂</span> Experience
+        </div>
+        <div class="cv-folder" onclick="openCVSection('skills')">
+          <span class="folder-icon">📂</span> Skills
+        </div>
+        <div class="cv-folder" onclick="openCVSection('education')">
+          <span class="folder-icon">📂</span> Education
+        </div>
+        <div class="cv-folder" onclick="openCVSection('projects')">
+          <span class="folder-icon">📂</span> Projects
+        </div>
+        <div class="cv-folder" onclick="openCVSection('certifications')">
+          <span class="folder-icon">📂</span> Certifications
+        </div>
+      </div>
+      <div class="cv-content" id="cv-content">
+        <div class="cv-welcome">
+          <h2>Welcome to CV Explorer</h2>
+          <p>Click on folders to explore my professional background</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recruiter Smart Search Modal -->
+  <div id="recruiter-panel" class="modal-window">
+    <div class="window-header">
+      <span class="window-title">🎯 Smart Recruiter Match</span>
+      <div class="window-controls">
+        <button class="win-btn close" onclick="closeRecruiterPanel()">×</button>
+      </div>
+    </div>
+    <div class="window-body recruiter-body">
+      <h3>Job Match Analysis</h3>
+      <p>Paste your job description below and get an instant match report:</p>
+      <textarea id="job-description" placeholder="Paste job description here..."></textarea>
+      <button onclick="analyzeJobMatch()" class="analyze-btn">Analyze Match</button>
+      <div id="match-result"></div>
+    </div>
+  </div>
+
+  <script src="terminal-engine.js"></script>
+</body>
+</html>
